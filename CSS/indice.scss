@@ -57,10 +57,10 @@ html,body{
         padding-top: 8vh;
         padding-bottom: 8vh;
         line-height: 2em;
-        padding-left: 30px;
         font-size: clamp(15px,3.6vw,30px);  
+        padding-left: 2%;
         p{
-           padding-right: 50px;
+           padding-left: 20px; 
         }
     }
     section.normal{
@@ -73,15 +73,15 @@ html,body{
     section.imagem{
         background-color: rgb(55, 55, 55);
         color: white;
-        display: inline-block;
         background-size: cover;
         background-position: right center;
         box-shadow:inset (6px 6px 13px rgba(0, 0, 0, 0.5));
         background-attachment: fixed;
         p{
-            background-color: rgba(0, 0, 0, 0.40);
-            width: 400px;
-            text-shadow: 1px 1px 0px black;
+            display: inline-block;
+           background-color: rgba(0, 0, 0, 0.40);
+           padding-right: 30px;
+           text-shadow: 1px 1px 0px black;
         }
     }
     section.imagem#img01{
