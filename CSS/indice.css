@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "topo";
+  src: url(../fontes/PassionOne-Regular.otf);
+}
+@font-face {
+  font-family: "verso";
+  src: url(../fontes/Sriracha-Regular.ttf);
+}
+html, body {
+  height: 100vh;
+}
+
+.topo {
+  flex-direction: column;
+}
+.topo h1 {
+  margin: 0px;
+  font-variant: small-caps;
+  padding-top: 50px;
+  font-family: "topo";
+  font-size: clamp(30px, 9vw, 72px);
+}
+.topo p {
+  padding: 10px 0px 40px 0px;
+  font-size: clamp(12px, 3vw, 24px);
+}
+
+.topo, .rodape {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.topo h1, .topo p, .topo a, .rodape h1, .rodape p, .rodape a {
+  color: white;
+}
+.topo a, .rodape a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+.topo a:hover, .rodape a:hover {
+  text-decoration: underline;
+}
+
+.corpo {
+  margin: auto;
+  max-width: 1000px;
+  font-family: "verso";
+  font-size: 1.5vw;
+}
+.corpo section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-size: clamp(15px, 3.6vw, 30px);
+}
+.corpo section p {
+  padding-bottom: 2em;
+  padding-right: 50px;
+}
+.corpo .normal {
+  background-color: white;
+  color: black;
+}
+.corpo .imagem {
+  background-color: rgb(55, 55, 55);
+  color: white;
+  display: inline-block;
+}
+.corpo .imagem p {
+  background-color: rgba(0, 0, 0, 0.31);
+}
+
+.rodape p {
+  padding: 10px 0px 20px 0px;
+}
+
+/*# sourceMappingURL=indice.css.map */

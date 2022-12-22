@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "topo";
+    src: url(../fontes/PassionOne-Regular.otf);
+} 
+@font-face {
+    font-family: "verso";
+    src: url(../fontes/Sriracha-Regular.ttf);
+} 
+
+html,body{
+    height: 100vh;
+} 
+.topo{   
+    flex-direction: column;
+    h1{
+        margin: 0px;
+        font-variant: small-caps;
+        padding-top: 50px;
+        font-family: 'topo';
+        font-size: clamp(30px,9vw,72px); 
+    }
+    p{
+        padding: 10px 0px 40px 0px;
+        font-size: clamp(12px,3vw,24px); 
+    }
+}
+.topo,.rodape{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center; // texto no rodapé não quer obdecer ao text-align
+    text-align: center;
+    h1,p,a{
+        color: white;
+    }
+    a{
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration:underline ;
+    }
+}
+.corpo{
+    margin: auto;
+    max-width: 1000px;
+    font-family:'verso' ;
+    font-size: 1.5vw;
+    section{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        line-height: 2em;
+        padding-left: 30px;
+        font-size: clamp(15px,3.6vw,30px);
+        p{
+            padding-bottom: 2em;
+            padding-right: 50px;
+            
+        }
+    }
+    .normal{
+        background-color: white;
+        color: black;
+    }
+    .imagem{
+        background-color: rgb(55, 55, 55);
+        color: white;
+        display: inline-block;
+        p{
+            background-color: rgba(0, 0, 0, 0.31);
+           // width: 400px;
+        }
+    }
+}
+.rodape{
+    p{
+        padding: 10px 0px 20px 0px;
+    }
+}
