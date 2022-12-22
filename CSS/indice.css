@@ -61,7 +61,7 @@ html, body {
   padding-top: 8vh;
   padding-bottom: 8vh;
   line-height: 2em;
-  font-size: clamp(15px, 3.6vw, 30px);
+  font-size: clamp(20px, 4vw, 30px);
   padding-left: 2%;
 }
 .corpo section p {
