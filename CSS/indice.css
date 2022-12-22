@@ -63,6 +63,7 @@ html, body {
   line-height: 2em;
   font-size: clamp(20px, 4vw, 30px);
   padding-left: 2%;
+  box-sizing: border-box;
 }
 .corpo section p {
   padding-left: 20px;
