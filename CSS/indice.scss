@@ -11,9 +11,9 @@
     font-family: "verso";
     src: url(../fontes/Sriracha-Regular.ttf);
 } 
-
 html,body{
     height: 100vh;
+    background-color: rgb(249, 239, 227);
 } 
 .topo{   
     flex-direction: column;
@@ -35,11 +35,12 @@ html,body{
     display: flex;
     justify-content: center; // texto no rodapé não quer obdecer ao text-align
     text-align: center;
-    h1,p,a{
+    h1,p{
         color: white;
     }
     a{
-        font-weight: bolder;
+        color: rgba(255, 255, 255, 0.558);
+        font-weight:100;
         text-decoration: none;
     }
     a:hover{
@@ -52,29 +53,43 @@ html,body{
     font-family:'verso' ;
     font-size: 1.5vw;
     section{
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        width: 100%;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
         line-height: 2em;
-        padding-left: 30px;
-        font-size: clamp(15px,3.6vw,30px);
+        font-size: clamp(20px,4vw,30px);  
+        padding-left: 2%;
+        box-sizing: border-box;
         p{
-            padding-bottom: 2em;
-            padding-right: 50px;
-            
+           padding-left: 20px; 
         }
     }
-    .normal{
+    section.normal{
         background-color: white;
         color: black;
+        p{
+            padding-bottom: 2em;
+         }
     }
-    .imagem{
+    section.imagem{
         background-color: rgb(55, 55, 55);
         color: white;
-        display: inline-block;
+        background-size: cover;
+        background-position: right center;
+        box-shadow:inset (6px 6px 13px rgba(0, 0, 0, 0.5));
+        background-attachment: fixed;
         p{
-            background-color: rgba(0, 0, 0, 0.31);
-           // width: 400px;
+            display: inline-block;
+           background-color: rgba(0, 0, 0, 0.40);
+           padding-right: 30px;
+           text-shadow: 1px 1px 0px black;
         }
+    }
+    section.imagem#img01{
+        background-image: url(../imagens/background001.jpg);
+    }
+    section.imagem#img02{
+        background-image: url(../imagens/background002.jpg);
     }
 }
 .rodape{

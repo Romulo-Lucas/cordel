@@ -13,6 +13,7 @@
 }
 html, body {
   height: 100vh;
+  background-color: rgb(249, 239, 227);
 }
 
 .topo {
@@ -37,11 +38,12 @@ html, body {
   justify-content: center;
   text-align: center;
 }
-.topo h1, .topo p, .topo a, .rodape h1, .rodape p, .rodape a {
+.topo h1, .topo p, .rodape h1, .rodape p {
   color: white;
 }
 .topo a, .rodape a {
-  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.558);
+  font-weight: 100;
   text-decoration: none;
 }
 .topo a:hover, .rodape a:hover {
@@ -55,27 +57,43 @@ html, body {
   font-size: 1.5vw;
 }
 .corpo section {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  width: 100%;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
   line-height: 2em;
-  padding-left: 30px;
-  font-size: clamp(15px, 3.6vw, 30px);
+  font-size: clamp(20px, 4vw, 30px);
+  padding-left: 2%;
+  box-sizing: border-box;
 }
 .corpo section p {
-  padding-bottom: 2em;
-  padding-right: 50px;
+  padding-left: 20px;
 }
-.corpo .normal {
+.corpo section.normal {
   background-color: white;
   color: black;
 }
-.corpo .imagem {
+.corpo section.normal p {
+  padding-bottom: 2em;
+}
+.corpo section.imagem {
   background-color: rgb(55, 55, 55);
   color: white;
-  display: inline-block;
+  background-size: cover;
+  background-position: right center;
+  box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
 }
-.corpo .imagem p {
-  background-color: rgba(0, 0, 0, 0.31);
+.corpo section.imagem p {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-right: 30px;
+  text-shadow: 1px 1px 0px black;
+}
+.corpo section.imagem#img01 {
+  background-image: url(../imagens/background001.jpg);
+}
+.corpo section.imagem#img02 {
+  background-image: url(../imagens/background002.jpg);
 }
 
 .rodape p {
